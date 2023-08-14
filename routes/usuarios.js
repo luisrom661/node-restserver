@@ -14,7 +14,11 @@ const { validarCampos } = require('../middlewares/validar-campos');
 const { validarJWT } = require('../middlewares/validar-jwt');
 const { esAdminRole, validarRole } = require('../middlewares/validar-roles');
 
-const { esRolValido, emailExiste, existeUsuarioPorId } = require('../helpers/db-validators');
+const { 
+    esRolValido, 
+    emailExiste, 
+    existeUsuarioPorId
+} = require('../helpers/db-validators');
 
 
 const router = Router();
